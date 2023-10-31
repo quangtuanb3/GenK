@@ -1,0 +1,8 @@
+1. Cinestar: 
+Readme.md required, chú trọng document : tài liệu phác thảo, chức năng, plan task theo giờ
+chú trọng kỹ thuật
+cách tổ chức code
+ghi log: test junit 
+dự án đồ sộ nhưng chưa đầy đủ work flow: document, git flow (trước khi pull request cần chạy test case), test : nên làm nhỏ nhưng chỉnh chu
+
+2. 

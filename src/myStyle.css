@@ -1,0 +1,24 @@
+.pointer {
+    cursor: pointer;
+}
+table td,
+th {
+    text-align: center;
+}
+.ql-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+.gk_home20-wrapper .gk_hotnews .hotnews-wrapper .hotnews {
+    display: block;
+}
+
+ul {
+    padding-left: 0;
+}
+#NEWS-content img {
+    width: 700px;
+}
