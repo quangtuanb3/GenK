@@ -72,7 +72,7 @@ export const Dashboard = () => {
                             return (
                                 <tr key={post.id}>
                                     <td>{index + 1}</td>
-                                    <td>{truncateStr(post.title, 30)}</td>
+                                    <td title={post.title}>{truncateStr(post.title, 30)}</td>
                                     <td>{post.author}</td>
                                     <td>
                                         <select className="form-select"

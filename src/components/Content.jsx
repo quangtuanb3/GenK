@@ -30,24 +30,24 @@ export const Content = () => {
 
     const categoryPosts = categoryPostData.Technology && categoryPostData.Technology.length > 0 ? categoryPostData : [];
 
-    let offsetHeight = 400;
+    const offsetHeight = useRef(410);
+
     const handleScroll = () => {
+        console.log("window.innerHeight + window.scrollY ", window.innerHeight + window.scrollY)
+        console.log("document.body.offsetHeight - offsetHeight.current ", document.body.offsetHeight - offsetHeight.current)
         if (
             targetRef.current &&
-            window.innerHeight + window.scrollY >= document.body.offsetHeight - offsetHeight &&
+            window.innerHeight + window.scrollY >= document.body.offsetHeight - offsetHeight.current &&
             !isFetching
         ) {
-            console.log("window.innerHeight + window.scrollY ", window.innerHeight + window.scrollY)
-            console.log("document.body.offsetHeight - 400 ", document.body.offsetHeight - offsetHeight)
             setIsFetching(true);
             dispatch(fetchTimelinePosts(page)).then(() => {
-                offsetHeight = offsetHeight + 1000;
+                offsetHeight.current -= 10000;
                 setPage(page + 1);
                 setIsFetching(false);
             });
         }
     };
-
     useEffect(() => {
         const handleScrollEvent = () => {
             handleScroll();

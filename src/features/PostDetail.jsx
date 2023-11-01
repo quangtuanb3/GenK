@@ -70,7 +70,7 @@ function PostDetail() {
                             </div>
 
                             <div id='NEWS-content'>
-                                <h5 style={{ marginTop: 40, color: "gray" }}><Link to={'/'} style={{ color: "gray", textDecoration:'none' }}>Home</Link> - {currentPost.category}</h5>
+                                <h5 style={{ marginTop: 40, color: "gray" }}><Link to={'/'} style={{ color: "gray", textDecoration: 'none' }}>Home</Link> - {currentPost.category}</h5>
                                 <div className='row'>
                                     <h1 className='col-10'>  {currentPost.title}  </h1>
                                     <div className='col-2'>

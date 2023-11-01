@@ -1,4 +1,5 @@
 import React from "react";
+import { formatDateTime, getTimeAgo } from "../utilities/utils";
 
 export const renderGkNewsBox = (post, classList, type) => {
     return (
@@ -140,7 +141,7 @@ export const TimelinePost = ({ post }) => {
                 </span>
                 <div className="knswli-meta">
                     <span className="knswli-time" >
-                        {post.created}
+                        {getTimeAgo(post.created)}
                     </span>
                 </div>
             </div>
