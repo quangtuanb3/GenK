@@ -1,5 +1,5 @@
 // export const SERVER_API = 'http://localhost:3300';
-export const SERVER_API = 'https://genk-json-server.vercel.app/';
+export const SERVER_API = 'https://genk-json-server.vercel.app';
 
 export const POST_API = SERVER_API + '/posts';
 
