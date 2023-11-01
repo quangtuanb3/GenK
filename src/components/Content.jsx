@@ -33,8 +33,8 @@ export const Content = () => {
     const offsetHeight = useRef(410);
 
     const handleScroll = () => {
-        console.log("window.innerHeight + window.scrollY ", window.innerHeight + window.scrollY)
-        console.log("document.body.offsetHeight - offsetHeight.current ", document.body.offsetHeight - offsetHeight.current)
+        // console.log("window.innerHeight + window.scrollY ", window.innerHeight + window.scrollY)
+        // console.log("document.body.offsetHeight - offsetHeight.current ", document.body.offsetHeight - offsetHeight.current)
         if (
             targetRef.current &&
             window.innerHeight + window.scrollY >= document.body.offsetHeight - offsetHeight.current &&
